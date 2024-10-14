@@ -137,7 +137,7 @@ contract ABA is OApp, OAppOptionsType3 {
         (string memory _data, uint16 _msgType, uint256 extraOptionsStart, uint256 extraOptionsLength) = decodeMessage(message);
         data = _data;
 
-        if (_msgType == SEND_ABA) {
+        if (_msgType == SEND_ABA) { //to return the sender A response
 
             string memory _newMessage = "Chain B says goodbye!";
 
@@ -158,7 +158,7 @@ contract ABA is OApp, OAppOptionsType3 {
             emit ReturnMessageSent(_newMessage, _origin.srcEid);
         }
 
-        emit MessageReceived(data, _origin.srcEid, _origin.sender);
+        emit MessageReceived(data, _origin.srcEid, _origin.sender); // no need to answer to the sender
     }
 
 
