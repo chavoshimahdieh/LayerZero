@@ -18,7 +18,7 @@
   },
   "resolutions": {
     "ethers": "^5.7.2",
-    "hardhat-deploy": "^0.12.1"
+    "hardhat-deploy": "^0.12.4"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
@@ -63,11 +63,11 @@
   "pnpm": {
     "overrides": {
       "ethers": "^5.7.2",
-      "hardhat-deploy": "^0.12.1"
+      "hardhat-deploy": "^0.12.4"
     }
   },
   "overrides": {
     "ethers": "^5.7.2",
-    "hardhat-deploy": "^0.12.1"
+    "hardhat-deploy": "^0.12.4"
   }
 }
