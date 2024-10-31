@@ -25,3 +25,15 @@ remappings = [
     '@layerzerolabs/=node_modules/@layerzerolabs/',
     '@openzeppelin/=node_modules/@openzeppelin/',
 ]
+
+[etherscan]
+holesky = { key = "${ETHERSCAN_API_KEY}" }
+amoy = { key = "${POLYGONSCAN_API_KEY}" }
+
+
+[rpc_endpoints]
+ethereum = "${ETHEREUM_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"
+holesky= "${HOLESKY_RPC_URL}"
+amoy = "${AMOY_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"
